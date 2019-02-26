@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        /* Lecture 42 : Drop Down Lists */
+
+
+        /* Lecture 41 : Check Boxes & Radio Buttons */
+
+
+        /* Lecture 40 : Introduction to Forms */
+
+
+        /* lecture 39 : Max Width & Height */
+
+
+        /* Lecture 38 : Fixed Positioning */
+
+
+        /* Lecture 37 : Relative Positioning */
+
+
+        /* Lecture 36 : Absolute Positioning */
+
+
+        /* Lecture 35 : Overriding Styling */
+
+
+        /* Lecture 34 : External Style Sheets */
+
+
+        /* Lecture 33 : Pseudo Elements */
+        p:first-letter {
+            font-weight: bold;
+            font-size: 30px;
+            color: green;
+        }
+
+        /* Lecture 32 : Child Selectors */
+        p > a {
+            color: blue;
+            font-size: 30px;
+        }
+
+        /* Lecture 31 : ID's */
+        #bobby {
+            border: 2px solid red;
+            /* position: absolute; */
+            top: 15px;
+            left: 25px;
+        }
+        #hobart {
+            border: 2px solid green;
+            /* position: absolute; */
+            top: 65px;
+            left: 5px;
+        }
+
+        /* Lecture 30 : Styling using classes */
+        .redtext {
+            color: red;
+        }
+        .greengoblins {
+            color: green;
+        }
+
+        hr {
+            border-style: double dot-dash;
+            border-width: thick;
+            background-color: greenyellow;
+        }
+
+        /* Lecture 29 : div */
+        div {
+            border: 2px solid red;
+            /* position: absolute; */ /* removed for the next lecture */
+            width: 300px;
+            top: 40px;
+            left: 30px;
+        }
+
+        /* Lecture 28 : Style More Than One Elements & Span ! */
+        /*  more than one elements
+        h3, p {
+            color: red;
+        }
+        */
+        span {
+            font-weight: bold;
+            color: green;
+        }
+        hyodae {
+            font-weight: lighter;
+            color: darkmagenta;
+        }
+
+        /* Lecture 27 : Styling Unordered Lists */
+        ul {
+            /* list-style-type: circle;*/
+            border: 1px solid red;
+            list-style-type: none;
+            padding: 0px;
+            /*
+            list-style-image: url("https://img.icons8.com/color/260/checkmark.png");
+            */
+        }
+
+        /* Lecture 26 : Styling Tables */
+        table {
+            border: 3px solid blue;
+            padding : 50px;
+            margin: 20px;
+        }
+        tr {
+            background-color: yellow;
+        }
+        td {
+            border: 2px dashed red;
+            padding: 20px;
+        }
+
+        /* Lecture 25 : Styling Links */
+        a:link {
+            color: red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            background-color: blue;
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        a:active {
+            background-color: orange;
+        }
+
+        /* Lecture 24 : Width & Height */
+        h4 {
+            background-color: red;
+            color: white;
+
+            /*
+            width: 350px;
+            */
+            width: 80%;
+            height: 50px;
+            border: 3px solid black;
+            padding: 10px;
+        }
+
+        /* Lecture 23 : Margin */
+        /*
+        p {
+            background-color: orange;
+            margin:2px;
+        }
+        */
+
+        /* Lecture 21,22 : Padding, Border */
+        h2 {
+
+            /* Background-color */
+
+            background-color: yellow;
+
+            /* Padding */
+            padding: 20px;
+
+            /*
+            padding-top: 30px;
+            padding-bottom: 20px;
+            */
+
+            /* Border */
+
+            border-color:red;
+            border-width: 3px;
+            border-style: dashed;
+
+            /*
+            border-bottom-color:green;
+            border-bottom-style: dotted;
+            border-bottom-width: 4px;
+            */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <hr />
+
+    <form action="">
+        Username: <input type="text" name="username" size="15" maxlength="10" value="Enter Name Here" onClick="javascript:this.value = '';" />
+    </form>
+
+    <hr />
+
+    <p>Paul did u hear miley cyrus player vbeer pong with the </p>
+    <p>omg, wtf bbq?</p>
+    <p>oh billy! don't do that!</p>
+
+    <hr />
+
+    <a href="http://daum.net">First: Daum.net</a>
+    <p><a href="http://daum.net">Second: Daum.net</a></p>
+    <h3><a href="http://daum.net">Third: Daum.net</a></h3>
+
+    <hr />
+
+    <p id="hobart" class="redtext">What happens if I use both id(green box) and class(red text)?</p>
+    <a href="https://css-tricks.com/the-difference-between-id-and-class/">
+        Check the difference between ID and Class
+    </a>
+
+    <hr />
+
+    <div id="bobby">Bobby is the best</div>
+    <div id="hobart">Hobart is the coolest</div>
+
+    <hr />
+
+    <p class="redtext">I want this text to be red!</p>
+    <p class="greengoblins">Boy oh I wish I was green!</p>
+
+    <hr />
+
+    <div>My name is Hyodae</div>
+
+    <hr />
+
+    <p>This is my first para and <span>I love carrots</span> and <hyodae>apple pie</hyodae></p>
+
+    <hr />
+
+    This is normal Text.
+    <h3>This is a header Three.</h3>
+    <p>This is a paragraph</p>
+
+    <hr />
+
+    <ul>
+        <li>Apple</li>
+        <li>Pie</li>
+        <li>Dumplings</li>
+    </ul>
+
+    <hr />
+
+    <table>
+        <tr>
+            <td>I love Hyodae</td>
+            <td>I love Hyodae</td>
+            <td>I love Hyodae</td>
+        </tr>
+        <tr>
+            <td>I love Hyodae</td>
+            <td>I love Hyodae</td>
+            <td>I love Hyodae</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <a href="http://naver.com" title="Go to Naver">naver.com</a>
+    This is just normal text.
+
+    <hr />
+
+    <h4>My name is Forest Gump</h4>
+
+    <hr />
+
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+
+    <hr />
+
+    <h1>Hello World</h1>
+    <h2>The world end in 2012</h2>
+    <h3>The world end in 2019</h3>
+    <h4>The world end in 2023</h4>
+    <h5>The world end in 2028</h5>
+</body>
+
+</html>
